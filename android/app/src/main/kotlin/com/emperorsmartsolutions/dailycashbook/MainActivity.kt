@@ -1,4 +1,4 @@
-package com.dailycashbook.daily_cashbook
+package com.emperorsmartsolutions.dailycashbook
 
 import io.flutter.embedding.android.FlutterActivity
 
