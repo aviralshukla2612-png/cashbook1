@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="auto">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Daily Cashbook | Vardaan Smart Solutions</title>
+  <meta name="description" content="Official Privacy Policy for Daily Cashbook mobile application by Vardaan Smart Solutions. Learn about our 100% local data storage, security standards, and privacy commitments.">
+  <meta name="author" content="Vardaan Smart Solutions">
+  <link rel="canonical" href="https://cashbook.vardaansmartsolutions.com/">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📘</text></svg>">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    :root {
+      --primary: #2563eb;
+      --primary-hover: #1d4ed8;
+      --primary-light: #eff6ff;
+      --accent: #10b981;
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --sidebar-bg: #ffffff;
+      --text-main: #0f172a;
+      --text-muted: #475569;
+      --text-subtle: #94a3b8;
+      --border: #e2e8f0;
+      --code-bg: #f1f5f9;
+      --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+      --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+      --radius: 12px;
+    }
+
+    [data-theme="dark"] {
+      --primary: #3b82f6;
+      --primary-hover: #60a5fa;
+      --primary-light: rgba(59, 130, 246, 0.15);
+      --accent: #10b981;
+      --bg: #0b0f17;
+      --card-bg: #151c28;
+      --sidebar-bg: #111827;
+      --text-main: #f1f5f9;
+      --text-muted: #94a3b8;
+      --text-subtle: #64748b;
+      --border: #1f293d;
+      --code-bg: #1e293b;
+      --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.4);
+      --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4);
+      --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      [data-theme="auto"] {
+        --primary: #3b82f6;
+        --primary-hover: #60a5fa;
+        --primary-light: rgba(59, 130, 246, 0.15);
+        --accent: #10b981;
+        --bg: #0b0f17;
+        --card-bg: #151c28;
+        --sidebar-bg: #111827;
+        --text-main: #f1f5f9;
+        --text-muted: #94a3b8;
+        --text-subtle: #64748b;
+        --border: #1f293d;
+        --code-bg: #1e293b;
+        --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.4);
+        --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4);
+        --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: var(--bg);
+      color: var(--text-main);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    /* Top Navigation Bar */
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background-color: var(--card-bg);
+      border-bottom: 1px solid var(--border);
+      backdrop-filter: blur(8px);
+      transition: background-color 0.3s ease, border-color 0.3s ease;
+    }
+
+    .nav-container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0.85rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      text-decoration: none;
+      color: var(--text-main);
+    }
+
+    .brand-icon {
+      width: 38px;
+      height: 38px;
+      background: linear-gradient(135deg, #2563eb, #3b82f6);
+      color: #ffffff;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      box-shadow: 0 4px 10px rgba(37, 99, 235, 0.25);
+    }
+
+    .brand-text h1 {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 1.15rem;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    .brand-text span {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    .nav-controls {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .btn-icon {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      color: var(--text-main);
+      width: 38px;
+      height: 38px;
+      border-radius: 9px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.95rem;
+      transition: all 0.2s ease;
+    }
+
+    .btn-icon:hover {
+      background: var(--primary-light);
+      color: var(--primary);
+      border-color: var(--primary);
+    }
+
+    .btn-contact {
+      background-color: var(--primary);
+      color: #ffffff;
+      padding: 0.45rem 1rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 0.875rem;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      transition: all 0.2s ease;
+    }
+
+    .btn-contact:hover {
+      background-color: var(--primary-hover);
+      box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+    }
+
+    /* Hero Banner */
+    .hero {
+      background: linear-gradient(180deg, var(--card-bg) 0%, var(--bg) 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 3rem 1.5rem 2.5rem;
+    }
+
+    .hero-container {
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+
+    .badge-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.3rem 0.8rem;
+      border-radius: 9999px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+    }
+
+    .chip-primary {
+      background: var(--primary-light);
+      color: var(--primary);
+      border: 1px solid rgba(37, 99, 235, 0.2);
+    }
+
+    .chip-accent {
+      background: rgba(16, 185, 129, 0.12);
+      color: var(--accent);
+      border: 1px solid rgba(16, 185, 129, 0.25);
+    }
+
+    .hero-title {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 2.3rem;
+      font-weight: 800;
+      line-height: 1.25;
+      color: var(--text-main);
+      margin-bottom: 0.75rem;
+    }
+
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      font-size: 0.875rem;
+      color: var(--text-muted);
+    }
+
+    .hero-meta item {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    /* Highlights Grid */
+    .highlights-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.25rem;
+      margin-top: 2rem;
+    }
+
+    .highlight-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.25rem;
+      box-shadow: var(--shadow-sm);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .highlight-card:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .highlight-icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      margin-bottom: 0.85rem;
+    }
+
+    .icon-blue { background: rgba(37, 99, 235, 0.1); color: var(--primary); }
+    .icon-green { background: rgba(16, 185, 129, 0.1); color: #10b981; }
+    .icon-purple { background: rgba(139, 92, 246, 0.1); color: #8b5cf6; }
+    .icon-orange { background: rgba(245, 158, 11, 0.1); color: #f59e0b; }
+
+    .highlight-card h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 0.35rem;
+      color: var(--text-main);
+    }
+
+    .highlight-card p {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* Main Content Layout */
+    .main-wrapper {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem 4rem;
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 2.5rem;
+    }
+
+    /* Sidebar Table of Contents */
+    .sidebar {
+      position: sticky;
+      top: 5rem;
+      height: fit-content;
+      background: var(--sidebar-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.25rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .sidebar-title {
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-subtle);
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .toc-nav {
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+
+    .toc-link {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 0.5rem 0.75rem;
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.85rem;
+      font-weight: 500;
+      border-radius: 6px;
+      transition: all 0.2s ease;
+    }
+
+    .toc-link:hover, .toc-link.active {
+      color: var(--primary);
+      background-color: var(--primary-light);
+      font-weight: 600;
+    }
+
+    /* Content Area */
+    .content-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 2.5rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .policy-section {
+      margin-bottom: 2.5rem;
+      scroll-margin-top: 6rem;
+    }
+
+    .policy-section:last-child {
+      margin-bottom: 0;
+    }
+
+    .section-title {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--border);
+    }
+
+    .section-title i {
+      color: var(--primary);
+      font-size: 1.15rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
+      font-size: 0.95rem;
+      color: var(--text-muted);
+    }
+
+    ul, ol {
+      margin-bottom: 1rem;
+      padding-left: 1.5rem;
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    strong {
+      color: var(--text-main);
+      font-weight: 600;
+    }
+
+    /* Callout Box */
+    .callout {
+      background-color: var(--primary-light);
+      border-left: 4px solid var(--primary);
+      padding: 1.1rem 1.25rem;
+      border-radius: 0 var(--radius) var(--radius) 0;
+      margin: 1.25rem 0;
+    }
+
+    .callout-title {
+      font-weight: 700;
+      color: var(--text-main);
+      font-size: 0.95rem;
+      margin-bottom: 0.35rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .callout p {
+      font-size: 0.875rem;
+      margin-bottom: 0;
+      color: var(--text-muted);
+    }
+
+    /* Table Styling */
+    .table-container {
+      overflow-x: auto;
+      margin: 1.25rem 0;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.875rem;
+      text-align: left;
+    }
+
+    th {
+      background: var(--code-bg);
+      color: var(--text-main);
+      font-weight: 600;
+      padding: 0.75rem 1rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    td {
+      padding: 0.75rem 1rem;
+      border-bottom: 1px solid var(--border);
+      color: var(--text-muted);
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Footer */
+    .footer {
+      background: var(--card-bg);
+      border-top: 1px solid var(--border);
+      padding: 2.5rem 1.5rem;
+      text-align: center;
+      font-size: 0.875rem;
+      color: var(--text-muted);
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-bottom: 1rem;
+      flex-wrap: wrap;
+    }
+
+    /* Mobile Responsive */
+    @media (max-width: 900px) {
+      .main-wrapper {
+        grid-template-columns: 1fr;
+        padding-top: 1.5rem;
+      }
+      .sidebar {
+        display: none;
+      }
+      .hero-title {
+        font-size: 1.75rem;
+      }
+      .content-card {
+        padding: 1.5rem;
+      }
+    }
+
+    @media print {
+      .navbar, .sidebar, .btn-contact, .nav-controls, .footer-links {
+        display: none !important;
+      }
+      .main-wrapper {
+        display: block;
+        padding: 0;
+      }
+      .content-card {
+        border: none;
+        box-shadow: none;
+        padding: 0;
+      }
+      body {
+        background: #ffffff;
+        color: #000000;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="https://cashbook.vardaansmartsolutions.com/" class="brand">
+        <div class="brand-icon">
+          <i class="fa-solid fa-book-bookmark"></i>
+        </div>
+        <div class="brand-text">
+          <h1>Daily Cashbook</h1>
+          <span>Vardaan Smart Solutions</span>
+        </div>
+      </a>
+      
+      <div class="nav-controls">
+        <button class="btn-icon" id="themeToggle" title="Toggle Dark/Light Mode">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button class="btn-icon" onclick="window.print()" title="Print Privacy Policy">
+          <i class="fa-solid fa-print"></i>
+        </button>
+        <a href="mailto:support@vardaansmartsolutions.com" class="btn-contact">
+          <i class="fa-regular fa-envelope"></i> Contact Support
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-container">
+      <div class="badge-wrap">
+        <span class="chip chip-primary"><i class="fa-solid fa-shield-halved"></i> Privacy Policy</span>
+        <span class="chip chip-accent"><i class="fa-solid fa-lock"></i> 100% Offline & Local Data</span>
+      </div>
+      
+      <h1 class="hero-title">Privacy Policy for Daily Cashbook</h1>
+      
+      <div class="hero-meta">
+        <div><i class="fa-solid fa-building"></i> <strong>Publisher:</strong> Vardaan Smart Solutions</div>
+        <div><i class="fa-regular fa-calendar-check"></i> <strong>Effective Date:</strong> October 5, 2026</div>
+        <div><i class="fa-solid fa-rotate"></i> <strong>Last Updated:</strong> October 5, 2026</div>
+      </div>
+
+      <!-- Quick Highlights Grid -->
+      <div class="highlights-grid">
+        <div class="highlight-card">
+          <div class="highlight-icon icon-blue">
+            <i class="fa-solid fa-hard-drive"></i>
+          </div>
+          <h3>100% On-Device Storage</h3>
+          <p>Your financial logs, categories, and account balances remain safely stored inside your device's local database.</p>
+        </div>
+
+        <div class="highlight-card">
+          <div class="highlight-icon icon-green">
+            <i class="fa-solid fa-user-shield"></i>
+          </div>
+          <h3>No Account Required</h3>
+          <p>Use the app anonymously. We never ask for your name, phone number, email address, or online registration.</p>
+        </div>
+
+        <div class="highlight-card">
+          <div class="highlight-icon icon-purple">
+            <i class="fa-solid fa-ban"></i>
+          </div>
+          <h3>Zero Data Selling</h3>
+          <p>We do not harvest, sell, monetize, or transmit your personal or financial data to external remote servers.</p>
+        </div>
+
+        <div class="highlight-card">
+          <div class="highlight-icon icon-orange">
+            <i class="fa-solid fa-fingerprint"></i>
+          </div>
+          <h3>Biometric Security</h3>
+          <p>Optional local passcode and biometric authentication safeguards your entries on your physical device.</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Layout -->
+  <div class="main-wrapper">
+    
+    <!-- Table of Contents Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-title">
+        <i class="fa-solid fa-list-ul"></i> Table of Contents
+      </div>
+      <nav class="toc-nav">
+        <a href="#overview" class="toc-link"><i class="fa-solid fa-chevron-right"></i> 1. Overview</a>
+        <a href="#data-collection" class="toc-link"><i class="fa-solid fa-chevron-right"></i> 2. Information Collection</a>
+        <a href="#local-architecture" class="toc-link"><i class="fa-solid fa-chevron-right"></i> 3. Offline Architecture</a>
+        <a href="#permissions" class="toc-link"><i class="fa-solid fa-chevron-right"></i> 4. Device Permissions</a>
+        <a href="#third-party" class="toc-link"><i class="fa-solid fa-chevron-right"></i> 5. Third-Party SDKs</a>
+        <a href="#data-control" class="toc-link"><i class="fa-solid fa-chevron-right"></i> 6. Data Control & Deletion</a>
+        <a href="#children" class="toc-link"><i class="fa-solid fa-chevron-right"></i> 7. Children's Privacy</a>
+        <a href="#changes" class="toc-link"><i class="fa-solid fa-chevron-right"></i> 8. Policy Updates</a>
+        <a href="#contact" class="toc-link"><i class="fa-solid fa-chevron-right"></i> 9. Contact Us</a>
+      </nav>
+    </aside>
+
+    <!-- Detailed Document Content -->
+    <main class="content-card">
+      
+      <!-- 1. Overview -->
+      <section id="overview" class="policy-section">
+        <h2 class="section-title">
+          <i class="fa-solid fa-circle-info"></i> 1. Overview & Introduction
+        </h2>
+        <p>Welcome to <strong>Daily Cashbook</strong>, a digital ledger and financial bookkeeping utility application developed and published by <strong>Vardaan Smart Solutions</strong> ("we", "us", "our", or "Company"). This Privacy Policy explains our commitment to preserving your privacy, detailing how information is handled when you download, install, and use our mobile application across Android and supported platforms.</p>
+        <p>We respect your fundamental right to financial privacy. Daily Cashbook has been architected from the ground up as an <strong>offline-first local application</strong>, ensuring your private financial transactions remain strictly in your hands.</p>
+        
+        <div class="callout">
+          <div class="callout-title">
+            <i class="fa-solid fa-shield-cat"></i> Core Guarantee
+          </div>
+          <p>Vardaan Smart Solutions does not operate cloud database servers to store your daily income, expenses, transaction notes, or category details. Your financial records never leave your smartphone unless you explicitly export them.</p>
+        </div>
+      </section>
+
+      <!-- 2. Data Collection -->
+      <section id="data-collection" class="policy-section">
+        <h2 class="section-title">
+          <i class="fa-solid fa-database"></i> 2. Information Collection & Usage
+        </h2>
+        <p>To provide context on how Daily Cashbook operates, here is an explicit breakdown of the data types processed by the application:</p>
+        
+        <ol>
+          <li>
+            <strong>Financial & Ledger Data (Locally Stored):</strong>
+            <p>Any records you input—such as income values, expense amounts, payment methods, transaction dates, categories, remark notes, and custom ledger tags—are stored exclusively in an embedded local SQLite database managed by the app. This information is processed solely to calculate balances, generate cash flow charts, and render PDF/CSV reports.</p>
+          </li>
+          <li>
+            <strong>Device & Performance Telemetry (Non-Personal):</strong>
+            <p>We may process standard non-identifying device metrics via official operating system APIs (such as Google Play Services). This includes device hardware model, operating system version, screen resolution, app installation version, system language, crash diagnostic logs, and ANR (Application Not Responding) metrics. This telemetry is strictly used to troubleshoot crashes and improve application stability.</p>
+          </li>
+          <li>
+            <strong>No Personal Identification (PII):</strong>
+            <p>Daily Cashbook does not require account creation, sign-in, mobile OTP verification, social login, or submission of personal identifying details like your legal name, home address, or government ID numbers.</p>
+          </li>
+        </ol>
+      </section>
+
+      <!-- 3. Local Architecture -->
+      <section id="local-architecture" class="policy-section">
+        <h2 class="section-title">
+          <i class="fa-solid fa-server"></i> 3. 100% Offline Data Storage & Security
+        </h2>
+        <p>Your trust is paramount. Here is how we enforce maximum data protection for your financial records:</p>
+        <ul>
+          <li><strong>Local Database Engine:</strong> Data is persisted using high-performance local SQLite storage (Drift database engine).</li>
+          <li><strong>No Cloud Syncing:</strong> Daily Cashbook does not automatically sync your transaction history with external cloud databases, third-party storage, or remote servers.</li>
+          <li><strong>Biometric App Lock:</strong> The application supports device-level PIN, Pattern, and Biometric authentication (Fingerprint / Face Unlock). Biometric data is verified directly by your device hardware security chip (Android Keystore system) and is never accessible by Daily Cashbook or sent externally.</li>
+        </ul>
+      </section>
+
+      <!-- 4. Device Permissions -->
+      <section id="permissions" class="policy-section">
+        <h2 class="section-title">
+          <i class="fa-solid fa-key"></i> 4. Device Permissions & Rationale
+        </h2>
+        <p>To deliver specific features, Daily Cashbook may request explicit runtime permissions. You maintain full control over these permissions via your device system settings:</p>
+        
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Permission</th>
+                <th>Purpose & Rationale</th>
+                <th>Is Mandatory?</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Storage / Media Access</strong></td>
+                <td>Allows writing exported PDF statements, Excel/CSV backups, and financial summaries directly to your device storage folder.</td>
+                <td>Optional (Only needed when exporting reports)</td>
+              </tr>
+              <tr>
+                <td><strong>Biometrics / Use Fingerprint</strong></td>
+                <td>Enables hardware-level app locking so only authorized device owners can open Daily Cashbook.</td>
+                <td>Optional (Only when App Lock feature is toggled ON)</td>
+              </tr>
+              <tr>
+                <td><strong>Network State / Internet Access</strong></td>
+                <td>Required for fetching ad components (if ad-supported) and submitting anonymized system crash logs to Google Play Console.</td>
+                <td>Standard (Controlled by System)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- 5. Third Party -->
+      <section id="third-party" class="policy-section">
+        <h2 class="section-title">
+          <i class="fa-solid fa-puzzle-piece"></i> 5. Third-Party Services & Analytics
+        </h2>
+        <p>Daily Cashbook may incorporate reliable third-party Software Development Kits (SDKs) provided by industry leaders to maintain application quality and deliver in-app advertisements. These third-party services operate under their respective privacy policies:</p>
+        
+        <ul>
+          <li>
+            <strong>Google Play Services:</strong> Used for app distribution, core runtime services, and security checks. 
+            <br><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy & Terms</a>
+          </li>
+          <li>
+            <strong>Google AdMob:</strong> Serves non-intrusive in-app advertisements. AdMob may utilize anonymous advertising identifiers (Advertising ID) to serve personalized or contextual ads according to user preferences.
+            <br><a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">Google AdMob Privacy Policy</a>
+          </li>
+        </ul>
+      </section>
+
+      <!-- 6. Data Control -->
+      <section id="data-control" class="policy-section">
+        <h2 class="section-title">
+          <i class="fa-solid fa-trash-can"></i> 6. User Rights, Data Control & Deletion
+        </h2>
+        <p>Because Daily Cashbook stores all data locally on your smartphone, you hold 100% control over your data lifecycle:</p>
+        
+        <ul>
+          <li><strong>Data Export & Backup:</strong> You can export your entire transaction history to PDF or CSV files at any time through the app's Report section.</li>
+          <li><strong>Data Erasure:</strong> You can clear all cached transactions and reset your database directly within the app settings.</li>
+          <li><strong>Complete Permanent Deletion:</strong> Uninstalling the Daily Cashbook app from your Android or mobile device will immediately and permanently erase all locally saved transaction logs, categories, and application preferences. Because we do not keep server backups, erased data cannot be restored by Vardaan Smart Solutions.</li>
+        </ul>
+      </section>
+
+      <!-- 7. Children -->
+      <section id="children" class="policy-section">
+        <h2 class="section-title">
+          <i class="fa-solid fa-child-reaching"></i> 7. Children's Privacy (COPPA & Global Standards)
+        </h2>
+        <p>Daily Cashbook is designed as a general utility tool for managing financial records and is not targeted at children under the age of 13. We do not knowingly solicit or collect personal information from minors. If you are a parent or guardian and discover that a child has provided us with personal data, please contact us immediately so we can assist in resolving the issue.</p>
+      </section>
+
+      <!-- 8. Changes -->
+      <section id="changes" class="policy-section">
+        <h2 class="section-title">
+          <i class="fa-solid fa-clock-rotate-left"></i> 8. Changes to This Privacy Policy
+        </h2>
+        <p>We may update our Privacy Policy periodically to reflect enhancements in app functionality, regulatory requirements, or organizational updates. Any modifications will be posted directly on this official domain page (<code>https://cashbook.vardaansmartsolutions.com/</code>) with an updated "Last Updated" timestamp.</p>
+        <p>We encourage users to review this page periodically to remain informed about how we protect user privacy.</p>
+      </section>
+
+      <!-- 9. Contact -->
+      <section id="contact" class="policy-section">
+        <h2 class="section-title">
+          <i class="fa-solid fa-headset"></i> 9. Contact Us & Developer Information
+        </h2>
+        <p>If you have any questions, feedback, privacy inquiries, or suggestions regarding this Privacy Policy or Daily Cashbook, please reach out to us:</p>
+        
+        <div class="callout" style="background-color: var(--card-bg); border: 1px solid var(--border); border-left: 4px solid var(--accent);">
+          <div class="callout-title" style="color: var(--text-main);">
+            <i class="fa-solid fa-building-user"></i> Vardaan Smart Solutions Support Team
+          </div>
+          <p><strong>Official Publisher:</strong> Vardaan Smart Solutions</p>
+          <p><strong>Subdomain & Portal:</strong> <a href="https://cashbook.vardaansmartsolutions.com/" target="_blank">https://cashbook.vardaansmartsolutions.com/</a></p>
+          <p><strong>Support Email:</strong> <a href="mailto:support@vardaansmartsolutions.com">support@vardaansmartsolutions.com</a></p>
+          <p><strong>Privacy Office:</strong> <a href="mailto:privacy@vardaansmartsolutions.com">privacy@vardaansmartsolutions.com</a></p>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="https://cashbook.vardaansmartsolutions.com/">Daily Cashbook</a>
+      <span>&bull;</span>
+      <a href="#overview">Overview</a>
+      <span>&bull;</span>
+      <a href="#data-collection">Data Privacy</a>
+      <span>&bull;</span>
+      <a href="#contact">Contact Support</a>
+    </div>
+    <p>&copy; 2026 <strong>Vardaan Smart Solutions</strong>. All rights reserved. Daily Cashbook is a registered trademark/product of Vardaan Smart Solutions.</p>
+  </footer>
+
+  <!-- Theme Toggle & Active Scroll Script -->
+  <script>
+    // Dark/Light Theme Switching
+    const themeToggleBtn = document.getElementById('themeToggle');
+    const htmlElement = document.documentElement;
+
+    function getInitialTheme() {
+      const saved = localStorage.getItem('theme');
+      if (saved) return saved;
+      return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    }
+
+    function setTheme(theme) {
+      htmlElement.setAttribute('data-theme', theme);
+      localStorage.setItem('theme', theme);
+      const icon = themeToggleBtn.querySelector('i');
+      if (theme === 'dark') {
+        icon.className = 'fa-solid fa-sun';
+      } else {
+        icon.className = 'fa-solid fa-moon';
+      }
+    }
+
+    // Set on load
+    setTheme(getInitialTheme());
+
+    themeToggleBtn.addEventListener('click', () => {
+      const current = htmlElement.getAttribute('data-theme') || 'auto';
+      const next = current === 'dark' ? 'light' : 'dark';
+      setTheme(next);
+    });
+
+    // Active link highlighting on scroll
+    const sections = document.querySelectorAll('.policy-section');
+    const navLinks = document.querySelectorAll('.toc-link');
+
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (pageYOffset >= (sectionTop - 120)) {
+          current = section.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${current}`) {
+          link.classList.add('active');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
